@@ -366,7 +366,22 @@ span.type span {
 	padding: 2px 16px;
 	margin: 1px 8px 0 0;
 }
-.type span.full-time {
+
+.type span.graduate {
+	background-color: #BBBBFF;
+	border: 2px solid #BBBBFF;
+	color: #fff !important;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.type span.volunteer {
+	background-color: #8CEFFD;
+	border: 2px solid #8CEFFD;
+	color: #fff !important;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.type span.post-doc {
 	background-color: #D72F1D;
 	border: 2px solid #D72F1D;
 	color: #fff !important;
@@ -378,13 +393,13 @@ span.type span {
 	color: #fff !important;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
-.type span.freelance {
+.type span.profession {
 	background-color: #8CB90E;
 	border: 2px solid #8CB90E;
 	color: #fff !important;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
-.type span.temporary {
+.type span.student {
 	background-color: #97479E;
 	border: 2px solid #97479E;
 	color: #fff !important;
