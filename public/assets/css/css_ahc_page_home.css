@@ -1,0 +1,268 @@
+/********************/
+/* HOME PAGE STYLES */
+/********************/
+
+.visual{
+	position:relative;
+	z-index:1;
+	padding:0 0 40px;
+	background:url(../assets/img/img_ahc_bg_visual_690x40.png) no-repeat 0 100%;
+}
+
+#about2 .visual{
+	background:url(../assets/img/img_ahc_bg_visual_690x40.png) no-repeat 0 100%;
+}
+
+.visual .holder{
+	padding:4px 0px 4px 4px;
+	border:1px solid #dbd9d9;
+	background:#fff;
+}
+.visual #marquee {
+	position:relative;
+	width:930px;
+	height:375px;
+	overflow:hidden
+}
+
+.visual #marquee ul#marquee_slides {
+	position:relative;
+	top:0px;
+	left:0px;
+	width:930px;
+	height:375px;
+	overflow:hidden
+}
+
+.visual #marquee ul#marquee_slides li {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:930px;
+	height:375px;
+	z-index:1;
+	background-color:#ffffff
+}
+
+.visual #marquee ul#marquee_slides li.active {
+	z-index:3 !important;
+}
+
+.visual #marquee ul#marquee_slides li img {
+	float:left;
+}
+
+.visual #marquee ul#marquee_slides li h3 {
+	font: 24px/30px TitilliumText15L400wt, Arial, Helvetica, sans-serif;
+	margin-left:698px;
+	padding:20px 30px 0 0;
+	color:#7a0019
+}
+
+.visual #marquee ul#marquee_slides li p {
+	font: 12px/18px TitilliumText15L400wt, Arial, Helvetica, sans-serif;
+	margin-left:698px;
+	padding:5px 30px 0 0;
+	color:#333333
+}
+
+.visual .marquee_copy {
+  position: absolute;
+  bottom:20px;
+  right:0px;
+  *height:80px;
+  width:374px;
+  background: url(../assets/img/img_ahc_marquee_bg_transparent.png) repeat 0 0; 
+  padding: 15px 15px 15px 20px
+}
+
+.visual .marquee_copy h2 {
+  font: 20px/20px Verdana, Arial, Helvetica, sans-serif;
+  color: #444;
+  padding:0 0 6px 0;
+  margin: 0;
+}
+
+.visual .marquee_copy p {
+  font: 13px/18px Verdana, Arial, Helvetica, sans-serif;
+  color: #444;
+  margin-bottom: 0px;
+}
+
+.visual #marquee .button{
+	position:relative;
+	display:block;
+	font: 14px/35px TitilliumText15L400wt, Arial, Helvetica, sans-serif;
+	height:35px;
+	width:128px;
+	margin:20px 0 0 698px;
+	padding:0 55px 0 20px;
+	border:3px solid #e8e8e8;
+	background:url(../assets/img/img_ahc_bg_btn_marquee.gif) top left repeat-x;
+	color:#ffffff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-shadow: 1px 2px 0px #222;
+}
+
+.visual #marquee a.button:hover{
+	text-decoration:none;
+}
+
+.visual #marquee .button span {
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:35px;
+	height:30px;
+	background:url/prod/groups/ahc/@sec/@ahc/documents/asset/img_ahc_btn_arrow_marquee.gif) top left no-repeat;
+}
+
+.visual #marquee #marquee_nav {
+	position:absolute;
+	width:266px;
+	bottom:0;
+	right:-4px;
+	z-index:10;
+}
+
+.visual #marquee #marquee_nav li {
+	height:31px;
+	background:url(../assets/img/img_ahc_bg_nav_marquee.gif) top left no-repeat;
+	padding-top:1px;
+	position:relative;
+}
+
+.visual #marquee #marquee_nav li a {
+	height:31px;
+	font: 12px/31px Verdana, Arial, Helvetica, sans-serif;
+	color:#333333;
+	display:block;
+	padding-left:30px;
+	*display:inline-block;
+}
+
+.visual #marquee #marquee_nav li a:hover {
+	height:31px;
+	font: 12px/31px Verdana, Arial, Helvetica, sans-serif;
+	position:relative;
+	left:-13px;
+	background:url(../assets/img/img_ahc_bg_nav_marquee_active.png) bottom left no-repeat;
+	z-index:2;
+	padding-left:43px;
+	text-decoration:underline;
+	width:279px;
+	color:#7a0019;
+	*display:inline-block;
+}
+
+.visual #marquee #marquee_nav li.active a {
+	height:31px;
+	font: 12px/31px Verdana, Arial, Helvetica, sans-serif;
+	position:relative;
+	left:-13px;
+	background:url(../assets/img/img_ahc_bg_nav_marquee_active.png) bottom left no-repeat;
+	z-index:11;
+	padding-left:43px;
+	width:279px;
+	color:#7a0019;
+	*display:inline-block;
+}
+
+.visual .frame{
+	overflow:hidden;
+	position:relative;
+}
+.visual img{vertical-align:top;}
+.visual .area{
+	float:right;
+	width:224px;
+	padding:24px 23px 23px 22px;
+	text-align:left;
+	font-size:14px;
+	line-height:24px;
+}
+.visual .area h2{
+	margin:0 0 16px;
+	font:21px/26px TitilliumText15L400wt, Arial, Helvetica, sans-serif;
+}
+.visual .area address{
+	margin:0 0 35px;
+	font-style:normal;
+}
+.visual .area address span{display:block;}
+.visual .area .box{
+	width:118px;
+	height:144px;
+	padding:16px 15px 15px;
+	font:16px/18px TitilliumText15L400wt, Arial, Helvetica, sans-serif;
+	background:url(../assets/img/img_ahc_bg_box.gif) no-repeat;
+}
+.visual .area .box img{
+	vertical-align:top;
+	margin:0 0 9px;
+}
+.visual .area .box .description{margin:0 -13px 0 -2px;}
+.visual .container{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:630px;
+	min-height:40px;
+	padding:25px 0 10px 19px;
+	font:bold 15px/22px Tahoma, Arial, Helvetica, sans-serif;
+	background:url(../assets/img/img_ahc_bg_container.png);
+	color:#fdbf57;
+}
+
+.visual .containerFullWidth{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:920px;
+	min-height:40px;
+	padding:25px 0 10px 19px;
+	font:bold 15px/22px Tahoma, Arial, Helvetica, sans-serif;
+	background:url(../assets/img/img_ahc_bg_container.png);
+	color:#fdbf57;
+}
+
+.visual .container span, .visual .containerFullWidth span{
+	font-size:36px;
+	font-weight:bold;
+	color:#fdbf57;
+}
+
+/*****************/
+/* SLIDER STYLES */
+/*****************/
+#slider_wrapper {
+  height: 350px;
+  width: 690px;
+  padding: 0;
+  margin: 0;
+}
+#slides {
+  height: 350px;
+  width: 690px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.slide {
+  height: 350px;
+  width: 690px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+.slide.active {
+  z-index: 3 !important;
+  opacity: 1;
+}

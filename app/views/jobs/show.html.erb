@@ -1,0 +1,104 @@
+<p id="notice"><%= notice %></p>
+
+<div class="section single">
+
+  <div class="section_header">
+
+    <div class="date"><strong>May 15</strong> <span class="year">2013</span></div>
+
+    <h1 class="title">
+      <span class="type"><span class="jtype full-time">Student</span></span>
+      <%= @job.title %>
+    </h1>
+
+    <p class="meta">
+      <a href="" rel="nofollow"><%= @job.area %></a> &ndash; Posted by <a href=""><%= @job.department %></a>
+      &ndash;<strong><%= @job.location %></strong>, United States
+    </p>
+    <div class="clear"></div>
+
+  </div><!-- end section_header -->
+
+  <div class="section_content">
+
+    <!-- <p class="sharethis">
+    <span class="st_twitter_hcount" displayText="Tweet"></span>
+    <span class="st_facebook_hcount" displayText="Share"></span>
+    </p> -->
+
+    <h2>Job Description</h2>
+
+    <%= @job.description %>
+
+    <section id="listing-fields"></section>
+
+    <!-- <h2>How to Apply</h2>
+    Etiam molestie quam id lacus tempus facilisis id vel enim. In dapibus ante ac felis aliquam mollis. Pellentesque eget magna nec erat sodales facilisis ut dictum dui. Aliquam erat volutpat. Maecenas tellus massa, sollicitudin quis vehicula id, fringilla id massa. Proin non urna in risus accumsan dapibus. Morbi non turpis tellus, vitae varius dui. Sed ultricies sem vel arcu ultricies laoreet. Ut sed sapien at erat faucibus facilisis. Donec pulvinar purus et risus pretium hendrerit. Donec dui tellus, aliquet facilisis volutpat vel, imperdiet at libero. Curabitur nisi nunc, mattis sed consequat sit amet, tempor a enim. -->
+
+    <p>&nbsp;</p>    
+    <p class="meta"><em>Job Categories: <a href=''>thisCat</a>. Job Types: <a href=''>thisType</a>. Job Tags: <a href=''>tag1</a>, <a href=''>tag2</a>, and <a href=''>tag3</a>. Job expires in <strong>x days</strong>.</em></p>
+
+    <p class="stats">0 total views, 0 today</p> 
+    <div class="clear"></div>
+
+  </div><!-- end section_content -->
+
+
+  <div id="apply_form" class="section_content ">
+    <h2>Apply for this Job</h2>
+    <form action="" method="post" class="main_form" enctype="multipart/form-data">
+
+      <p><label for="your_name">Name <span title="required">*</span></label> <input type="text" class="text" name="your_name" id="your_name" value=" " /> </p>
+      <p><label for="your_email">Email <span title="required">*</span></label> <input type="text" class="text" name="your_email" id="your_email" value="" /></p>
+      <p><label for="your_message">Message <span title="required">*</span></label> <textarea rows="5" cols="30" name="your_message" id="your_message"></textarea></p>
+
+      <p class="optional"><label for="your_cv">Upload resum&eacute; (pdf, doc, txt, rtf)</label> <input type="file" class="text" name="your_cv" id="your_cv" /></p>
+      <p class="optional"><label for="your_coverletter">Upload cover letter (pdf, doc, txt, rtf)</label> <input type="file" class="text" name="your_coverletter" id="your_coverletter" /></p>
+
+      <p><input type="submit" class="submit" name="apply_to_job" value="Apply for Job" /></p>
+
+  </form>
+  </div>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %> |
+
+</div>
+
+
+
+
+
+
+<!-- <p>
+  <b>Title:</b>
+  <%= @job.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @job.description %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @job.location %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @job.area %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%= @job.department %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @job.user_id %>
+</p> -->
+
+
+

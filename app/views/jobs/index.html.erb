@@ -1,0 +1,111 @@
+
+
+<!-- Search Box -->
+<form action="" method="get" id="searchform">
+
+    <div class="search-wrap">
+
+        <div>
+            <input type="text" id="search" title="" name="s" class="text" placeholder="All Jobs" value="" />
+            <input type="text" id="near" title="Location" name="location" class="text" placeholder="Location" value="" />
+            <label for="search"><button type="submit" title="Go" class="submit">Go</button></label>
+
+            <input type="hidden" name="ptype" value="job_listing" />
+        </div>
+
+        <!-- <div class="radius">
+            <label for="radius">Radius:</label>
+            <select name="radius" class="radius">
+                <option value="1" >1 mi</option>
+                <option value="5" >5 mi</option>
+                <option value="10" >10 mi</option>
+                <option value="50"  selected='selected'>50 mi</option>
+                <option value="100" >100 mi</option>
+                <option value="1000" >1,000 mi</option>
+                <option value="5000" >5,000 mi</option>
+            </select>
+        </div>
+ -->
+    </div><!-- end search-wrap -->
+
+</form>
+
+<div class="clear"></div>
+
+<h2 class="pagetitle">
+    <small class="rss"><a href=""><img src="assets/img/feed.png" title="Latest Jobs RSS Feed" alt="Latest Jobs RSS Feed" /></a></small>
+    Latest Jobs 
+</h2>
+
+
+<form class="filter" method="get" action="">
+    <p><input type="checkbox" name="profession" id="profession" checked="checked" value="show" /> <label for="profession">Professional</label></p>
+    <p><input type="checkbox" name="student" id="student" checked="checked" value="show" /> <label for="student">Student Worker</label></p>
+    <p><input type="checkbox" name="graduate" id="graduate" checked="checked" value="show" /> <label for="graduate">Graduate</label></p>
+    <!-- <p><input type="checkbox" name="scholar" id="scholar" checked="checked" value="show" /> <label for="scholar">Scholarship</label></p> -->
+    <p><input type="checkbox" name="post-doc" id="post-doc" checked="checked" value="show" /> <label for="post-doc">Post-Doctoral</label></p>
+    <p><input type="checkbox" name="volunteer" id="volunteer" checked="checked" value="show" /> <label for="volunteer">Volunteer</label></p>
+    <p><input type="checkbox" name="internship" id="internship" checked="checked" value="show" /> <label for="internship">Internship</label></p>
+    <p><input type="checkbox" name="part-time" id="part-time" checked="checked" value="show" /> <label for="part-time">Part-Time</label></p>
+    <p>
+    <input type="submit" value="Filter" class="submit" />
+    <input type="hidden" name="action" value="Filter" />
+    </p>
+    <div class="clear"></div>
+</form>
+
+
+<ol class="jobs">
+    <% @jobs.each do |job| %>
+    <li class="job">
+        <dl>
+
+            <dt>Type</dt>
+            <dd class="type"><span class="jtype part-time">Student</span></dd>
+
+            <dt>Job</dt>
+            <dd class="title">
+                <strong><%= link_to job.title, job %></strong>
+                <a href="" rel="nofollow"><%= job.area %></a>&ndash; Posted by <a href=""><%= job.department %></a>
+            </dd>
+            
+            <dt>Location</dt>
+            <dd class="location"><strong><%= job.location %></strong>United States</dd>
+
+            <dt>Date Posted</dt>
+            <dd class="date"><strong>May 15</strong> <span class="year">2013</span></dd>
+        </dl>
+    </li>
+    <% end %>
+</ol>
+
+<!-- <table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Location</th>
+    <th>Area</th>
+    <th>Department</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @jobs.each do |job| %>
+  <tr>
+    <td><%= job.title %></td>
+    <td><%= job.description %></td>
+    <td><%= job.location %></td>
+    <td><%= job.area %></td>
+    <td><%= job.department %></td>
+    <td><%= job.user_id %></td>
+    <td><%= link_to 'Show', job %></td>
+    <td><%= link_to 'Edit', edit_job_path(job) %></td>
+    <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br /> -->
+

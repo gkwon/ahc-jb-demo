@@ -1,0 +1,625 @@
+
+article,  aside,  details,  figcaption,  figure,  footer,  header,  hgroup,  nav,  section  {
+    
+    display:  block
+}
+audio,  canvas,  video  {
+    
+    display:  inline - block;
+     * display:  inline;
+     * zoom:  1
+}
+audio: not([controls])  {
+    
+    display:  none
+}
+[hidden]  {
+    
+    display:  none
+}
+html  {
+    
+    font - size:  100 % ;
+     - webkit - text - size - adjust:  100 % ;
+     - ms - text - size - adjust:  100 %
+}
+html, 
+button, 
+input, 
+select, 
+textarea  {
+    
+    font - family:  sans - serif;
+    
+    color:  #222;
+}
+body {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+::-moz-selection {
+    background: # fe57a1;
+    
+    color:  #fff;
+    
+    text - shadow:  none
+}
+::selection  {
+    
+    background:  #fe57a1;
+    
+    color:  #fff;
+    
+    text - shadow:  none
+}
+a: hover  {
+    
+    color:  #06e;
+}
+a:focus {
+    outline: thin dotted;
+}
+a:hover, a:active {
+    outline: 0;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b, strong {
+    font-weight: bold;
+}
+blockquote {
+    margin: 1em 40px;
+}
+dfn {
+    font-style: italic;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid # ccc;
+    
+    margin:  1em 0;
+    
+    padding:  0
+}
+ins  {
+    
+    background:  #ff9;
+    
+    color:  #000;
+    text-decoration: none;
+}
+mark {
+    background: # ff0;
+    
+    color:  #000;
+    font-style: italic;
+    font-weight: bold;
+}
+pre, code, kbd, samp {
+    font-family: monospace,  serif;
+    _font-family: 'courier new',  monospace;
+    font-size: 1em;
+}
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+q {
+    quotes: none;
+}
+q:before, q:after {
+    content: "";
+    content: none;
+}
+small {
+    font-size: 85%}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+ul, ol {
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+}
+dd {
+    margin: 0 0 0 40px;
+}
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+figure {
+    margin: 0;
+}
+form {
+    margin: 0;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+label {
+    cursor: pointer;
+}
+legend {
+    border: 0;
+    *margin-left: -7px;
+    padding: 0;
+    white-space: normal;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+button, input {
+    line-height: normal;
+}
+button, input[type= "button"], 
+input[type = "reset"], 
+input[type = "submit"]  {
+    
+    cursor:  pointer;
+     - webkit - appearance:  button;
+     * overflow:  visible
+}
+button[disabled], 
+input[disabled]  {
+    
+    cursor:  default
+}
+input[type = "checkbox"], 
+input[type = "radio"]  {
+    
+    box - sizing:  border - box;
+    
+    padding:  0;
+     * width:  13px;
+     * height:  13px
+}
+input[type = "search"]  {
+    
+    -webkit - appearance:  textfield;
+     - moz - box - sizing:  content - box;
+     - webkit - box - sizing:  content - box;
+    
+    box - sizing:  content - box
+}
+input[type = "search"]::-webkit - search - decoration, 
+input[type = "search"]::-webkit - search - cancel - button  {
+    
+    -webkit - appearance:  none
+}
+button::-moz - focus - inner, 
+input::-moz - focus - inner  {
+    
+    border:  0;
+    
+    padding:  0
+}
+textarea  {
+    
+    overflow:  auto;
+    
+    vertical - align:  top;
+    
+    resize:  vertical
+}
+input: invalid, 
+textarea: invalid  {
+    
+    background - color:  #f0dddd
+}
+table  {
+    
+    border - collapse:  collapse;
+    
+    border - spacing:  0
+}
+td  {
+    
+    vertical - align:  top
+}
+.chromeframe  {
+    
+    margin:  0.2em 0;
+    
+    background:  #ccc;
+    
+    color:  black;
+    
+    padding:  0.2em 0
+}
+@font - face  {
+    
+    font - family:  'TitilliumText15L400wt';
+    
+    src:  url("http://ctsi.umn.edu/prod/groups/ahc/@sec/@ahc/documents/asset/font_ctsi_titillium_400_eot.eot");
+    
+    src:  url("http://ctsi.umn.edu/prod/groups/ahc/@sec/@ahc/documents/asset/font_ctsi_titillium_400_woff.woff") format("woff"), 
+    url("http: //ctsi.umn.edu/prod/groups/ahc/@sec/@ahc/documents/asset/font_ctsi_titillium_400_ttf.ttf") format("truetype"), 
+    url("http: //ctsi.umn.edu/prod/groups/ahc/@sec/@ahc/documents/asset/font_ctsi_titillium_400_svg.svg") format("svg");
+    
+    font - weight:  normal;
+    
+    font - style:  normal
+}
+html  {
+    
+    padding:  0;
+    
+    margin:  0;
+    
+    background - color:  #FFF
+}
+html, 
+body  {
+    
+    text - align:  center;
+    
+    background - color:  #FFF;
+    
+    padding:  0;
+    
+    margin:  0;
+    
+    color:  #000;
+}
+h1, h2, h3, h4, h5 {
+    font-family: TitilliumText15L400wt, Verdana, Arial, Helvetica, sans-serif;
+    color: # 333
+}
+#container  {
+    
+    width:  960px;
+    
+    margin:  30px auto;
+    
+    min - height:  300px;
+    
+    background - color:  #FFFFFF;
+    
+    text - align:  left;
+    
+    padding:  0
+}
+header  {
+    
+    background:  #640015 url("https://ctsi.ahc.umn.edu/public/assets/images/bg_header.gif") repeat-x scroll left top;
+    border-bottom: 1px solid # 900021;
+    
+    border - top:  1px solid #900021;
+    height: 68px;
+}
+header # logo_uofm a  {
+    
+        background:  transparent url(http: //a.umn.edu/img/logo_uofm_D2D-001.gif) no-repeat scroll left top;
+    display: block;
+    float: left;
+    height: 0;
+    margin: 0 127px 0 0;
+    overflow: hidden;
+    padding-top: 62px;
+    width: 429px;
+}
+header a, header a:hover {
+    font-weight: bold;
+    color: #fff;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+header p {
+    font-size: 8px;
+    color: #fff;
+    font-size: 11px;
+    padding: 0 6px 0 0;
+}
+#header_sub {
+    background: #7a0019 url("https://ctsi.ahc.umn.edu/public/assets/images/bg_header_sub.gif") repeat-x scroll left top;
+    border-top: 1px solid #5B0013;
+    color: #FFFFFF;
+    font-size: 0.9em;
+    height: 100%;
+    line-height: 30px;
+    text-align: right;
+    height: 40px;
+}
+#main_head {
+    background: #7a0019 url("https://ctsi.ahc.umn.edu/public/assets/images/ctsi-portal-home-960.jpg") repeat-x scroll left top;
+    width: 960px;
+    height: 80px;
+}
+.login-container {
+    text-align: center;
+}
+.login-container .login-message-container img {
+    border-bottom: 7px solid #691918;
+}
+.login-container #login-header {
+    margin: 1.0em;
+}
+.login-container #login-header h3 {
+    font: 24px/32px TitilliumText15L400wt, Verdana, Arial, Helvetica, sans-serif;
+    color: #7A0019;
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+}
+.login-container p {
+    font-size: 0.8em;
+}
+.login-container .login-buttons {
+    width: 950px;
+    margin: auto;
+}
+.login-container .login-buttons .button {
+    margin: auto;
+}
+.login-container .login-buttons .login-btn {
+    margin-top: 40px;
+}
+.login-container #guest-button {
+    margin: 20px 0 0 90px;
+}
+.login-container .login-button {
+    width: 47%;
+    text-align: center;
+    float: left;
+    margin: 10px 0 0 0;
+    border-right: 1px solid #CCC;
+    height: 100px;
+    padding: 10px;
+}
+.login-container .login-button p {
+    text-align: left;
+    margin: 0;
+}
+.login-container .last-button {
+    border: none;
+    padding-left: 20px;
+}
+footer {
+    line-height: 1.231;
+    font-size: 11px;
+    color: #636363;
+}
+footer #footer_inner {
+    margin-top: 5em;
+    border-top: 3px solid #E4E4E4;
+    padding: 5px 0 0;
+}
+footer p {
+    float: left;
+    font-size: 93%;
+    margin: 0 0 1em;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+footer ol {
+    font-size: 93%;
+    margin: 0 0 1em;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+footer ul {
+    float: right;
+    font-size: 93%;
+    margin: 0 0 1em;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+footer .footer_links li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+footer .footer_links li a {
+    color: #900021;
+}
+#menu {
+    margin: 7px 7px 0 0;
+    float: right;
+}
+#menu ul {
+    margin: 0;
+}
+#menu a {
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+}
+#menu a:hover {
+    text-decoration: none;
+}
+#menu a.multi-menu {
+    background: url(https://ctsi.ahc.umn.edu/public/assets/images/menu-arrow.png) no-repeat;
+    background-position: right 3px;
+    padding: 0 20px 0 5px;
+}
+#menu a.external {
+    background: url(https://ctsi.ahc.umn.edu/public/assets/images/open_link.gif) no-repeat;
+    background-position: right 3px;
+    padding: 0 20px 0 5px;
+}
+#menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    padding: 0.3em;
+}
+#menu li>ul {
+    position: absolute;
+    display: none;
+    width: 200px;
+    top: 30px;
+    z-index: 1040;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    background: url("https://ctsi.ahc.umn.edu/public/assets/images/bg_megamodule.jpg") repeat-x #f8e07f;
+    background-position: 0px -150px;
+    margin: 0;
+    padding: 10px 10px 15px 10px;
+    border-radius: 0 0 5px 5px;
+}
+#menu li>ul li {
+    float: none;
+    border-bottom: 1px dotted #FC3;
+}
+#menu li>ul a {
+    color: #640015;
+}
+a.button {
+    text-decoration: none;
+}
+.button {
+    position: relative;
+    display: block;
+    font: 14px/35px TitilliumText15L400wt, Arial, Helvetica, sans-serif;
+    height: 35px;
+    width: 128px;
+    margin: 0;
+    padding: 0 55px 0 20px;
+    border: 3px solid #E8E8E8;
+    background: url(http://ctsi.umn.edu/prod/groups/ahc/@sec/@ahc/documents/asset/img_ctsi_bg_btn_marquee.gif) top left repeat-x;
+    color: white !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-shadow: 1px 2px 0px #222;
+}
+.button span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 35px;
+    height: 30px;
+    background: url(http://ctsi.umn.edu/prod/groups/ahc/@sec/@ahc/documents/asset/img_ctsi_bg_arrow_marquee.gif) top left no-repeat;
+}
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+.ir {
+    display: block;
+    border: 0;
+    text-indent: -999em;
+    overflow: hidden;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+    *line-height: 0;
+}
+.ir br {
+    display: none;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+@media print {
+    * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+}
+a, a:visited {
+    text-decoration: underline;
+}
+a[href]:after {
+    content: " (" attr(href) ")"}
+abbr[title]:after {
+    content: " (" attr(title) ")"}
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""}
+pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
+thead {
+    display: table-header-group;
+}
+tr, img {
+    page-break-inside: avoid;
+}
+img {
+    max-width: 100% !important;
+}
+@page {
+    margin: 0.5cm;
+}
+p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+}
+h2, h3 {
+    page-break-after: avoid;
+}
+}

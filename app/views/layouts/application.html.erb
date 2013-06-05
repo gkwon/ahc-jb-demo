@@ -1,14 +1,217 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-  <title>AhcJbDemo</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+<!-- jquery core -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	var g_strLanguageId = "en";
+</script>
+<script type="text/javascript" src="/assets/js/wcm.toggle.js"></script>
+
+<link rel="stylesheet" href="/assets/css/css_ahc_global.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/css_ahc_page_home.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/css_ahc_sliders.css" type="text/css">
+<link rel="stylesheet" href="/assets/css/css_ahc_jobboard.css" type="text/css">
+<script type="text/javascript" src="/assets/js/js_ahc_global.js"></script>
+
+<style type="text/css">
+@font-face{
+	font-family: 'TitilliumText15L400wt';
+	src: url('http://ahc-test.umn.edu/ahcdemo/prod/groups/ahc/@sec/@ahc/documents/asset/font_ctsi_titillium_400_eot.eot');
+	src: url('http://ahc-test.umn.edu/ahcdemo/prod/groups/ahc/@sec/@ahc/documents/asset/font_ctsi_titillium_400_woff.woff') format('woff'),
+		url('http://ahc-test.umn.edu/ahcdemo/prod/groups/ahc/@sec/@ahc/documents/asset/font_ctsi_titillium_400_ttf.ttf') format('truetype'),
+		url('http://ahc-test.umn.edu/ahcdemo/prod/groups/ahc/@sec/@ahc/documents/asset/font_ctsi_titillium_400_svg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+</style> 
+<title>AHEC - CE/CME Data and Assessment Form</title>
+<link href="assets/css/login-container.css" media="all" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]--> 
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]--> 
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]--> 
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]--> 
+<!--[if gt IE 9]>  <body>             <![endif]-->  
+<!--[if !IE]><!--> 
+<body>	<!--<![endif]-->
 
-<%= yield %>
+<div style="text-align:center;">
+	<div id="umheader">
+		<div class="center clearfix">
+        	<div class="ir">
+            	<a href="" class="no_external">Main navigation</a> | 
+            	<a href="" class="no_external">Main content</a>
+        	</div>
+	        <div class="campus_links">
+	            <ul>
+	            <li>Campuses:</li>
+	            <li><a href="http://www.umn.edu" class="no_external">Twin Cities</a></li>
+	            <li><a href="http://www.crk.umn.edu" class="no_external">Crookston</a></li>
+	            <li><a href="http://www.d.umn.edu" class="no_external">Duluth</a></li>
+	            <li><a href="http://www.morris.umn.edu" class="no_external">Morris</a></li>
+	            <li><a href="http://www.r.umn.edu" class="no_external">Rochester</a></li>
+	            <li><a href="http://www.umn.edu/campuses.php" class="no_external">Other Locations</a></li>
+	            </ul>
+	        </div>
+    	</div>
+	    <div class="maroonStripe">
+	        <div class="center clearfix">
+	            <div class="logo_uofm">
+	                <a href="http://www.umn.edu/" class="no_external">Go to the U of M home page</a>
+	            </div>
+	            <div class="search_area clearfix">
+	                <div class="search_nav clearfix">
+	                    <a href="http://onestop.umn.edu/" class="no_external btn_onestop">OneStop</a>
+	                    <a href="https://www.myu.umn.edu/" class="no_external btn_myu">myU</a>
+	                </div>
+	                <div class="search">
+	                	<form name="gsearch" id="gsearch" class="gsearch" action="http://search.umn.edu/s/" method="GET" title="Search Websites and People">
+			            	<label for="search_field">Search Websites and People</label>
+			            	<input type="text"   value="Search Websites and People" name="q" id="search_field" title="Search text" onblur="if (this.value=='') this.value='Search Websites and People'" onfocus="if (this.value=='Search Websites and People') this.value=''"/> 
+			            	<input type="image" class="search_btn" value="Search" alt="Submit Search" src="http://a.umn.edu/img/search_button-001.gif" />
+			            	<input type="hidden" value="www.med.umn.edu"		 name="r" />
+			            	<input type="hidden" value="eAHC"					 name="e" />
+			        	</form>
+			        	<script type="text/javascript">
+			        		var gsearch = document.forms.gsearch;
+			        		var inputs	= {};
+			        		for(var i=0; i<gsearch.length; i++) if(gsearch[i].id || gsearch[i].name)
+			        			inputs[gsearch[i].id || gsearch[i].name] = i;
+			        		gsearch[inputs.r].value = location.host;
+			        	</script>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div><!-- end header -->
+	<div class="clear"></div>
+		
+	<div id="main_container" class="container">
+	
+		<!-- RED TAB AT TOP OF THE HEADER -->		
+		<div class="container">
+			<div class="more_info clearfix">
+				<ul class="clearfix">
+				<li id="red_tab_1"><a href="http://www.health.umn.edu/">Academic Health Center</a></li>
+				</ul>
+			</div>
+		</div>
 
+		<!-- CONTENTS OF THE HEADER -->		
+		<div class="dept_title clearfix">
+			<h4>Academic Health Center</h4>
+			<h2>Job Board Prototype</h2>
+			<!-- <h3></h3> -->
+		</div>
+
+
+
+		<!-- SIDE BAR -->
+		<div class="main_content clearfix">
+			<div class="sidebar">
+				<h3></h3>
+				<!-- <ul class="sidebar_nav">
+					<li>TEST</li>
+				</ul> -->
+
+				<%= link_to 'Submit a Job', new_job_path, :class => 'sidebar_button no_external' %>
+				<!-- <a href="" class="sidebar_button no_external">Submit a Job</a> -->
+
+
+				<ul class="sidebar_subnav">
+    				<li>
+    					<a href="">Schools &amp; Programs</a>
+    					<ul>
+    						<li>School of Dentistry</li>
+    						<li>Medical School</li>
+    						<li>School of Nursing</li>
+    						<li>College of Pharmacy</li>
+    						<li>School of Public Health</li>
+    						<li>College of Veterinary Medicine</li>
+    					</ul>
+    				</li>
+		    		<li>
+		    			<a href="">Date Posted</a>
+		    			<ul>
+		    				<li>Today</li>
+		    				<li>This Week</li>
+		    				<li>Last Week</li>
+		    				<li>This Month</li>
+		    			</ul>
+		    		</li>
+				</ul> 
+	
+			</div>
+		
+			<!--#####################################################-->
+			<div class="content">
+				<h3 class="content_title">AHC Job Postings</h3>
+
+				<%= yield %>
+
+			</div>
+			<!--#####################################################-->
+		</div>
+						
+
+		<div id="footer">
+			<div class="container clearfix">
+				<!-- <span class="span4">
+					<ul class="footer_links">
+						<li><strong><a href="http://www.health.umn.edu/facultystaff/communications/index.htm" class="no_external">Office of Communications</a></strong></li>
+						<li><a href="http://health.umn.edu/" target="">Academic Health Center</a><br /><a target="" href="mailto:ahcweb@umn.edu">ahcweb@umn.edu</a> | 612-624-5100<br />420 Delaware Street SE<br /> A-395 Mayo Memorial Building<br /> Minneapolis, MN 55455&nbsp;</li>
+					</ul>
+				</span>
+
+				<span class="span3">
+					<ul class="footer_links">
+						<li><strong>
+								Getting started
+						</strong></li>
+						
+							<li><a href="../../../../../../../prod/groups/ahc/contact/schedule-a-consultation/index.htm" class="no_external">Schedule a consultation</a></li>
+							<li><a href="http://z.umn.edu/webform" class="no_external">Request a project</a></li>
+							<li><a href="../../../../../../../prod/groups/ahc/prod/groups/ahc/@pub/@ahc/documents/content/ahc_content_411544.pdf" class="no_external">Web info session (PDF)</a></li>
+							<li><a href="../../../../../../../prod/groups/ahc/prod/groups/ahc/@pub/@ahc/documents/content/ahc_content_412714.pdf" class="no_external">Process checklist (PDF)</a></li>
+							<li><a href="../../../../../../../prod/groups/ahc/about/creative-agency-services/index.htm" class="no_external">Creative Agency services</a></li>
+						
+					</ul>
+				</span> -->
+			</div>
+		</div>
+
+
+		<div id="umfooter">
+			<div class="center">
+		        <div class="copy">
+		            <ul>
+		                <li>&copy;2013 Regents of the University of Minnesota. All rights reserved.</li>
+		                <li>The University of Minnesota is an equal opportunity educator and employer</li>
+		                
+		            </ul>
+		        </div>
+		        <div class="resourceLinks">
+		            <ul class="footer_links">
+		                <li>Twin Cities Campus:</li>
+		                <li><a href="http://www1.umn.edu/pts/" class="no_external">Parking &amp; Transportation</a></li>
+		                <li><a href="http://www.umn.edu/twincities/maps/index.html" class="no_external">Maps &amp; Directions</a></li>
+		            </ul>
+		            <ul class="footer_links">
+		            	<li><a href="http://www.directory.umn.edu/" class="no_external">Directories</a></li>
+		                <li><a href="http://www.umn.edu/twincities/contact/" class="no_external">Contact U of M</a></li>
+		                <li><a href="http://www.privacy.umn.edu/" class="no_external">Privacy</a></li>
+		            </ul> 
+		        </div>
+		    </div>
+		</div>
+			
+	</div>
+</div>
+	
 </body>
 </html>
+
